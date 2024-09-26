@@ -26,10 +26,11 @@ const config: Config = {
         "hero-pattern": "url('/images/gradient-hero-bg.jpg')",
       },
       animation: {
-        'cursor-blink': 'blink 2s infinite',
-      }
+        "cursor-blink": "blink 2s infinite",
+      },
     },
   },
+
   plugins: [],
 };
 export default config;
