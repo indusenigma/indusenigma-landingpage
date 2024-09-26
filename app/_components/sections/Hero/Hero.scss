@@ -1,0 +1,41 @@
+.link1 {
+    line-height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    display: flex;
+    z-index: 2;
+    gap: 0.8rem;
+    border-radius: 3rem;
+
+    a {
+        background: transparent;
+        padding: 0.9rem;
+        border-radius: 50%;
+        display: flex;
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+.name {
+    font-family: 'Kalam', cursive;
+    font-weight: 900;
+}
+
+
+.imgcontainer1 {
+    right: 4rem;
+    top: 6rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 90%;
+        border-radius: 45%;
+    }
+}
