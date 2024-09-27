@@ -7,14 +7,18 @@ import { ImLinkedin } from "react-icons/im";
 import { BiLinkAlt } from "react-icons/bi";
 import "./Hero.scss";
 import { motion } from "framer-motion";
+import HeroList from "./HeroList";
+
 export const Hero = () => {
   const spanRef = useRef(null);
+
   useEffect(() => {
     if (spanRef.current) {
       init(spanRef.current, {
         showCursor: true,
+        typeSpeed: 300,
         strings: [
-          "Next JS,React JS ",
+          "Next JS, React JS ",
           "Three JS Generated 3D Models",
           "Powered By Open AI",
           "Mobile Apps Development Using React Native and Flutter",
@@ -23,6 +27,7 @@ export const Hero = () => {
       });
     }
   }, []);
+
   return (
     <section className="w-full relative h-screen pt-12">
       <div className="flex mt-8 justify-between mx-12">
@@ -54,6 +59,12 @@ export const Hero = () => {
         <div className="imgcontainer1 absolute violet-gradient">
           <img src={"/Images/_DSC2063.JPG"} alt="" className="object-contain" />
         </div>
+      </div>
+      <div className="flex items-center gap-12 flex-col">
+        <button className="w-60 h-10 text-lg text-slate-300 font-bold border rounded-3xl bg-[#915EFF] border-[#915EFF] hover:bg-[#573899] text-white">
+          Hiring Us
+        </button>
+        <HeroList />
       </div>
       <div className="absolute xs:bottom-10 bottom-32 w-10 flex justify-end items-center">
         <a href="#education">

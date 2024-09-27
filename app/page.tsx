@@ -8,7 +8,7 @@ import Project from "./_components/sections/Project";
 export default function Home() {
   return (
     <div className="w-full h-full relative z-0 bg-primary">
-      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-top">
         <Hero />
       </div>
       <div className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto z-0 flex gap-14 flex-col">

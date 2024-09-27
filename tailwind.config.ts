@@ -23,7 +23,7 @@ const config: Config = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/images/gradient-hero-bg.jpg')",
+        "hero-pattern": "url('/images/gradient-hero-bg.png')",
       },
       animation: {
         "cursor-blink": "blink 2s infinite",

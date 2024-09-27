@@ -679,4 +679,38 @@ const educations = [
   },
 ];
 
-export { list, profiles, technologies, experiences, educations, achievements };
+const Heros = [
+  {
+    title: "Software Devloper",
+    company_name: "Documentation Hub",
+    link: "https://https://github.com/indusenigma",
+    iconBg: "#383E56",
+    points: [
+      "Centralized access to documentation of popular libraries, frameworks, and tools",
+      "Examples: MDN Web Docs (JavaScript, HTML), React, Vue, Svelte, etc",
+      "Cheat Sheets: Quick reference guides for CSS, JavaScript, Git, and other tools",
+      "Example: Common CSS properties, JavaScript array methods, Git commands",
+    ],
+  },
+  {
+    title: "What we do",
+
+    iconBg: "#383E56",
+    date: "Aug 2023 - Present",
+    link: "",
+    points: [
+      "Indus Nigma is a Full-Stack WEB DESIGN and DEVELOPMENT agency. We are passionate about helping BRANDS create HUMAN centered digital experiences that attract, engage, and convert the perfect audience.",
+    ],
+    Link: "https://https://github.com/indusenigma",
+  },
+];
+
+export {
+  list,
+  profiles,
+  technologies,
+  experiences,
+  educations,
+  achievements,
+  Heros,
+};

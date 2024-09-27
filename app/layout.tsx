@@ -1,17 +1,13 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Exo_2 } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_components/layouts/Navbar";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const exo2 = Exo_2({
+  subsets: ["latin"], // specify the subsets (optional)
+  weight: ["400", "700", "900"], // optional: choose the font weights you want to include
+  style: ["normal", "italic"], // optional: define styles
+  display: "swap", // specify the weights (optional)
 });
 
 export const metadata: Metadata = {
@@ -26,9 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative z-0 bg-primary`}
-      >
+      <body className={`${exo2.className} antialiased relative z-0 bg-primary`}>
         <header>
           <Navbar />
         </header>
