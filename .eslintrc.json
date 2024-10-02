@@ -1,3 +1,63 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "root": true,
+  "env": { "browser": true, "es2020": true },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "eslint-config-prettier"
+  ],
+  "ignorePatterns": ["dist", ".eslintrc.cjs"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react-refresh"],
+  "rules": {
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ],
+    "comma-dangle": [2, "only-multiline"],
+    "import/prefer-default-export": "off",
+    "max-len": ["warn", { "code": 150 }],
+    "no-trailing-spaces": "warn",
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-closing-bracket-location": "error",
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-key": "warn",
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/jsx-max-props-per-line": [
+      2,
+      {
+        "maximum": {
+          "single": 2,
+          "multi": 1
+        }
+      }
+    ],
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "return": "parens-new-line",
+        "arrow": "parens-new-line",
+        "condition": "ignore",
+        "logical": "ignore",
+        "prop": "ignore"
+      }
+    ],
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "semi": ["warn", "always"],
+    "template-curly-spacing": "off",
+    "spaced-comment": "warn",
+    "no-duplicate-imports": "error",
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/no-explicit-any": "warn"
+  }
 }
