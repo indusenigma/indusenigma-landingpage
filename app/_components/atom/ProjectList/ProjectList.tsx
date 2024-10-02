@@ -14,7 +14,7 @@ const ProjectList: React.FC<ProjectListProps> = ({
   return (
     <li
       className={active ? "portfoliolist active" : "portfoliolist"}
-      id={`portfoliolist-${id}`} // Use the id prop to create a unique ID
+      id={`portfoliolist-${id}`}
       onClick={() => setSelected(id)}
     >
       {title}

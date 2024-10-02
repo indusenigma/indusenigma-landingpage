@@ -679,7 +679,7 @@ const educations = [
   },
 ];
 
-const Heros = [
+const HeroCard = [
   {
     title: "Software Devloper",
     company_name: "Documentation Hub",
@@ -694,10 +694,8 @@ const Heros = [
   },
   {
     title: "What we do",
-
     iconBg: "#383E56",
     date: "Aug 2023 - Present",
-    link: "",
     points: [
       "Indus Nigma is a Full-Stack WEB DESIGN and DEVELOPMENT agency. We are passionate about helping BRANDS create HUMAN centered digital experiences that attract, engage, and convert the perfect audience.",
     ],
@@ -712,5 +710,5 @@ export {
   experiences,
   educations,
   achievements,
-  Heros,
+  HeroCard,
 };

@@ -12,7 +12,22 @@ import { experiences } from "../../constants";
 
 import { textVariant } from "../../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
+
+interface ExperienceCardProps {
+  experience: {
+    date: string,
+    iconBg: string,
+    icon: string,
+    company_name: string,
+    title: string,
+    link: string,
+    points: string[]
+  };
+}
+
+
+
+const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
